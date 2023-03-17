@@ -8,19 +8,18 @@
   display: flex;
   align-items: center;
   font-style: bold;
-  &__icon {
-    cursor: pointer;
-    padding: 0 1rem;
-    border-right: solid rgba(121, 121, 121, 0.4) 0.1rem;
-    height: 1.5rem;
-  }
+}
+.font-style__icon {
+  cursor: pointer;
+  padding: 0 1rem;
+  border-right: solid rgba(121, 121, 121, 0.4) 0.1rem;
+  height: 1.5rem;
 }
 
 .night-mode {
   display: flex;
   align-items: center;
-
-  & input {
-    padding: 0 1rem;
-  }
 }
+.night-mode input {
+  padding: 0 1rem;
+}/*# sourceMappingURL=main.css.map */
