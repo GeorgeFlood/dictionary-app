@@ -1,11 +1,28 @@
 import React from "react";
+import { useState } from "react";
 
-const SearchBar = () => {
+const SearchBar = ({ getDefinition }) => {
+  const [word, setWord] = useState("");
+
+  const handleWordSubmit = (e) => {
+    e.preventDefault();
+    getDefinition(word);
+  };
+
+  const handleOnChange = (e) => {
+    setWord(e.target.value);
+  };
+
   return (
     <div>
-      <form>
+      <form onSubmit={handleWordSubmit}>
         <div className="search-container">
-          <input className="search" type="text" placeholder="Search..." />
+          <input
+            onChange={handleOnChange}
+            className="search"
+            type="text"
+            placeholder="Search..."
+          />
           <svg
             className="search-icon"
             xmlns="http://www.w3.org/2000/svg"

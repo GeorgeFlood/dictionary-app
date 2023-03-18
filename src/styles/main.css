@@ -36,7 +36,7 @@ body {
 .font-style {
   display: flex;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.65rem;
   font-style: bold;
 }
 .font-style__icon {
@@ -90,8 +90,10 @@ body {
 }
 
 .search {
+  margin: 0 auto;
   margin-top: 5rem;
-  width: 100%;
+  justify-content: center;
+  width: 95%;
   height: 5rem;
   background-color: rgba(0, 0, 0, 0.09);
   outline: 0;
@@ -101,17 +103,27 @@ body {
   padding-right: 2.4rem;
   font-size: 1.8rem;
   font-weight: bold;
+  transition: width ease-in-out 0.6s;
+}
+.search:focus {
+  outline: solid 1px #a445ed;
+  width: 100%;
+}
+.search:focus + .search-icon {
+  right: 1.3rem;
 }
 
 .search-container {
+  display: flex;
   position: relative;
 }
 
 .search-icon {
   position: absolute;
-  right: 10px;
+  right: 3.7rem;
   top: 75%;
   height: 2.4rem;
   width: 2.4rem;
   transform: translateY(-50%);
+  transition: all ease-in-out 0.3s 0.2s;
 }/*# sourceMappingURL=main.css.map */
