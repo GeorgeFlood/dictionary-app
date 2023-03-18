@@ -98,6 +98,20 @@ body {
   border: none;
   border-radius: 0.4rem;
   padding-left: 1rem;
+  padding-right: 2.4rem;
   font-size: 1.8rem;
   font-weight: bold;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 75%;
+  height: 2.4rem;
+  width: 2.4rem;
+  transform: translateY(-50%);
 }/*# sourceMappingURL=main.css.map */
