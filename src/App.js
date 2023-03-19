@@ -1,11 +1,12 @@
 import { useState } from "react";
 import Navbar from "./components/Navbar";
 import SearchBar from "./components/SearchBar";
+import Header from "./components/Header";
 import getDefinition from "./API";
 import "./styles/main.css";
 
 function App() {
-  const [definition, setDefinition] = useState({});
+  const [definition, setDefinition] = useState();
 
   const handleDefinitionData = async (data) => {
     await getDefinition(data).then((data) => {
@@ -19,6 +20,7 @@ function App() {
     <div className="App">
       <Navbar />
       <SearchBar handleDefinitionData={handleDefinitionData} />
+      <Header definition={definition} />
     </div>
   );
 }

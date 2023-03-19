@@ -1,0 +1,24 @@
+.header {
+  margin-top: 7rem;
+  display: flex;
+  justify-content: space-between;
+
+  &--title {
+    text-transform: uppercase;
+    font-size: 5rem;
+  }
+
+  &--sub {
+    color: #a445ed;
+    font-size: 2.2rem;
+    margin-top: 1rem;
+  }
+  &--play svg {
+    cursor: pointer;
+  }
+}
+
+.word--container {
+  display: flex;
+  flex-direction: column;
+}
