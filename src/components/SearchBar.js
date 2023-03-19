@@ -1,12 +1,12 @@
 import React from "react";
 import { useState } from "react";
 
-const SearchBar = ({ getDefinition }) => {
+const SearchBar = ({ handleDefinitionData }) => {
   const [word, setWord] = useState("");
 
   const handleWordSubmit = (e) => {
     e.preventDefault();
-    getDefinition(word);
+    handleDefinitionData(word);
   };
 
   const handleOnChange = (e) => {

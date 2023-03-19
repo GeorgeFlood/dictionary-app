@@ -7,7 +7,7 @@ const getDefinition = async (word) => {
     const response = await axios.get(`${BASE_URL}${word}`);
     return response.data;
   } catch (error) {
-    console.error(error);
+    throw new Error(error.response.data.title);
   }
 };
 
