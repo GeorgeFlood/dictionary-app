@@ -136,6 +136,7 @@ body {
 .header--title {
   text-transform: uppercase;
   font-size: 5rem;
+  font-style: italic;
 }
 .header--sub {
   color: #a445ed;
@@ -149,4 +150,25 @@ body {
 .word--container {
   display: flex;
   flex-direction: column;
+}
+
+.divider {
+  position: relative;
+  align-items: center;
+  margin-top: 7rem;
+  display: flex;
+  width: 100%;
+}
+.divider p {
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: bold;
+}
+.divider span::after {
+  position: absolute;
+  content: "";
+  margin-left: 5%;
+  width: 90%;
+  height: 0.1rem;
+  background: rgba(87, 87, 87, 0.35);
 }/*# sourceMappingURL=main.css.map */
