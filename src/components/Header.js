@@ -1,7 +1,6 @@
 import React from "react";
 
 const Header = ({ definition }) => {
-  console.log(definition);
   return (
     <div>
       <div className="header">
@@ -14,17 +13,19 @@ const Header = ({ definition }) => {
           </p>
         </div>
         <div className="header--play">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="75"
-            height="75"
-            viewBox="0 0 75 75"
-          >
-            <g fill="#A445ED" fill-rule="evenodd">
-              <circle cx="37.5" cy="37.5" r="37.5" opacity=".25" />
-              <path d="M29 27v21l21-10.5z" />
-            </g>
-          </svg>
+          <a target="_" href={definition ? definition[0].sourceUrls[0] : null}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="75"
+              height="75"
+              viewBox="0 0 75 75"
+            >
+              <g fill="#A445ED" fill-rule="evenodd">
+                <circle cx="37.5" cy="37.5" r="37.5" opacity=".25" />
+                <path d="M29 27v21l21-10.5z" />
+              </g>
+            </svg>
+          </a>
         </div>
       </div>
       <div className="divider">
