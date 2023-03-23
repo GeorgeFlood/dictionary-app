@@ -3,11 +3,18 @@ import React from "react";
 const Nouns = ({ definition }) => {
   if (!definition) return null;
 
-  console.log(definition[0].meanings[0].synonyms);
+  console.log(definition[0]);
 
-  const meanings = definition[0].meanings[0].definitions;
+  const meaningsNouns = definition[0].meanings[0]?.definitions;
+  const meaningsVerbs = definition[0].meanings[1]?.definitions;
 
-  const listItems = meanings.map((meaning, index) => (
+  const listNouns = meaningsNouns?.map((meaning, index) => (
+    <li className="list--items" key={index}>
+      {meaning.definition}
+    </li>
+  ));
+
+  const listVerbs = meaningsVerbs?.map((meaning, index) => (
     <li className="list--items" key={index}>
       {meaning.definition}
     </li>
@@ -25,7 +32,7 @@ const Nouns = ({ definition }) => {
     <div className="nouns">
       <h3>Meanings</h3>
       <div className="nouns--list">
-        <ul>{listItems}</ul>
+        <ul>{listNouns}</ul>
       </div>
       {synonyms.length > 0 && (
         <div className="synonyms">
@@ -36,6 +43,9 @@ const Nouns = ({ definition }) => {
       <div className="divider">
         <p className="verb">Verb</p>
         <span></span>
+      </div>
+      <div className="nouns--list">
+        <ul>{listVerbs}</ul>
       </div>
     </div>
   );
