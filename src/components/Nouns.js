@@ -33,6 +33,10 @@ const Nouns = ({ definition }) => {
           {synonymsWords}
         </div>
       )}
+      <div className="divider">
+        <p className="verb">Verb</p>
+        <span></span>
+      </div>
     </div>
   );
 };
