@@ -5,8 +5,8 @@ const Nouns = ({ definition }) => {
 
   console.log(definition[0]);
 
-  const meaningsNouns = definition[0].meanings[0]?.definitions;
-  const meaningsVerbs = definition[0].meanings[1]?.definitions;
+  const meaningsNouns = definition[0]?.meanings[0]?.definitions || [];
+  const meaningsVerbs = definition[0]?.meanings[1]?.definitions || [];
 
   const listNouns = meaningsNouns?.map((meaning, index) => (
     <li className="list--items" key={index}>
