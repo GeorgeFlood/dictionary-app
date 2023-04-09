@@ -1,0 +1,13 @@
+.src {
+  display: flex;
+  margin: 4rem 4rem;
+
+  &--p {
+    font-style: italic;
+  }
+
+  &--src {
+    margin-left: 2rem;
+    color: #000;
+  }
+}

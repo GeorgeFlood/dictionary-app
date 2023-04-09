@@ -224,4 +224,16 @@ li {
 
 .verb {
   color: black;
+}
+
+.src {
+  display: flex;
+  margin: 4rem 4rem;
+}
+.src--p {
+  font-style: italic;
+}
+.src--src {
+  margin-left: 2rem;
+  color: #000;
 }/*# sourceMappingURL=main.css.map */

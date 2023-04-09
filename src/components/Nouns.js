@@ -47,6 +47,15 @@ const Nouns = ({ definition }) => {
       <div className="nouns--list">
         <ul>{listVerbs}</ul>
       </div>
+      <div className="divider">
+        <span></span>
+      </div>
+      <div className="src">
+        <p className="src--p">Source:</p>
+        <a target="_" href={definition[0].sourceUrls[0]} className="src--src">
+          {definition[0].sourceUrls[0]}
+        </a>
+      </div>
     </div>
   );
 };
