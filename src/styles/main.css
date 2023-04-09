@@ -6,6 +6,22 @@
   box-sizing: inherit;
 }
 
+@font-face {
+  font-family: "Inconsolata";
+  src: url("../../public/fonts/inconsolata/Inconsolata-VariableFont_wdth,wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../public/fonts/inter/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lora";
+  src: url("../../public/fonts/lora/Lora-Italic-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lora";
+  src: url("../../public/fonts/lora/Lora-Italic-VariableFont_wght.ttf") format("truetype");
+}
 html {
   font-size: 62.5%;
   box-sizing: border-box;

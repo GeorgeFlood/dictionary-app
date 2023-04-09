@@ -1,16 +1,25 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
   const [isOpen, SetisOpen] = useState(false);
   const [font, SetFont] = useState("Serif");
+
+  const fontStyle = {
+    fontFamily: font,
+  };
+
+  useEffect(() => {
+    document.body.style.fontFamily = fontStyle.fontFamily;
+  }, [fontStyle.fontFamily]);
 
   const handleSvgClick = () => {
     SetisOpen(!isOpen);
   };
 
   const handleFontClick = (e) => {
-    SetFont(e.target.innerHTML);
+    const selectedFont = e.target.innerHTML;
+    SetFont(selectedFont === `sans-serif` ? `sans-serif` : selectedFont);
   };
 
   return (
