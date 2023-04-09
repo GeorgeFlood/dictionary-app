@@ -40,10 +40,12 @@ const Nouns = ({ definition }) => {
           {synonymsWords}
         </div>
       )}
-      <div className="divider">
-        <p className="verb">Verb</p>
-        <span></span>
-      </div>
+      {listVerbs.length > 0 && (
+        <div className="divider">
+          <p className="verb">Verb</p>
+          <span></span>
+        </div>
+      )}
       <div className="nouns--list">
         <ul>{listVerbs}</ul>
       </div>

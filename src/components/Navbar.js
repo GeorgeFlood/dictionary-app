@@ -3,11 +3,13 @@ import { useState, useEffect } from "react";
 
 const Navbar = () => {
   const [isOpen, SetisOpen] = useState(false);
-  const [font, SetFont] = useState("Serif");
+  const [font, SetFont] = useState("Sans-serif");
 
   const fontStyle = {
     fontFamily: font,
   };
+
+  console.log(fontStyle.fontFamily);
 
   useEffect(() => {
     document.body.style.fontFamily = fontStyle.fontFamily;
@@ -19,7 +21,7 @@ const Navbar = () => {
 
   const handleFontClick = (e) => {
     const selectedFont = e.target.innerHTML;
-    SetFont(selectedFont === `sans-serif` ? `sans-serif` : selectedFont);
+    SetFont(selectedFont);
   };
 
   return (
@@ -67,7 +69,7 @@ const Navbar = () => {
         {isOpen && (
           <div className={isOpen ? "dropdown-menu" : "no-menu"}>
             <ul>
-              <li onClick={handleFontClick}>Serif</li>
+              <li onClick={handleFontClick}>Sans-Serif</li>
               <li onClick={handleFontClick}>Inconsolata</li>
               <li onClick={handleFontClick}>inter</li>
               <li onClick={handleFontClick}>Lora</li>
