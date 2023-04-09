@@ -36,7 +36,7 @@ const Nouns = ({ definition }) => {
       </div>
       {synonyms.length > 0 && (
         <div className="synonyms">
-          <h3>Synonyms</h3>
+          <h3>Synonyms:</h3>
           {synonymsWords}
         </div>
       )}

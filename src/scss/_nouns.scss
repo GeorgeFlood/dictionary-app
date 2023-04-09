@@ -39,11 +39,14 @@ li {
 .synonyms {
   margin-top: 6rem;
   display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
 
   align-items: center;
 }
 
 .synonymsWords {
+  margin-top: 0.5rem;
   margin-left: 1rem;
   padding-left: 2rem;
   font-size: 1.7rem;

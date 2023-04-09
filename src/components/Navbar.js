@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 const Navbar = () => {
   const [isOpen, SetisOpen] = useState(false);
-  const [font, SetFont] = useState("Sans-serif");
+  const [font, SetFont] = useState("Sans-Serif");
 
   const fontStyle = {
     fontFamily: font,

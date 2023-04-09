@@ -114,6 +114,7 @@ body {
   background-color: rgba(0, 0, 0, 0.09);
   outline: 0;
   border: none;
+  font-family: inherit;
   border-radius: 0.4rem;
   padding-left: 1rem;
   padding-right: 2.4rem;
@@ -227,10 +228,13 @@ li {
 .synonyms {
   margin-top: 6rem;
   display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
   align-items: center;
 }
 
 .synonymsWords {
+  margin-top: 0.5rem;
   margin-left: 1rem;
   padding-left: 2rem;
   font-size: 1.7rem;
