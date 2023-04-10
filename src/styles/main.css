@@ -73,6 +73,7 @@ body {
 .night-mode {
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 .night-mode input {
   margin: 0 2rem;
@@ -107,9 +108,55 @@ body {
 }
 
 .dropdown-menu li:hover {
-  background-color: rgb(146, 144, 144);
+  background-color: rgb(189, 87, 252);
   border-radius: 5px;
   color: white;
+}
+
+.night-mode {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.night-mode input[type=checkbox] {
+  display: none;
+}
+
+.night-mode input[type=checkbox] + .slider {
+  width: 40px;
+  height: 20px;
+  background-color: rgb(172, 172, 172);
+  border-radius: 34px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0rem 2rem;
+}
+
+.night-mode input[type=checkbox]:checked + .slider {
+  background-color: #c334d3;
+  z-index: 100;
+}
+
+.night-mode input[type=checkbox] + .slider:before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  transition: 0.43s;
+  z-index: 100;
+}
+
+.night-mode input[type=checkbox]:checked + .slider:before {
+  transform: translateX(20px);
+  background-color: rgb(255, 255, 255);
+  z-index: 100;
 }
 
 .search {
@@ -205,6 +252,7 @@ body {
   margin-top: 6rem;
   font-size: 1.6rem;
   color: rgba(0, 0, 0, 0.35);
+  transition: all ease-in-out 0.43s;
 }
 [data-theme=dark] .nouns {
   color: rgba(255, 255, 255, 0.35);
@@ -270,6 +318,7 @@ li {
 .src--src {
   margin-left: 2rem;
   color: #000;
+  transition: all 0.43 ease-in-out;
 }
 [data-theme=dark] .src--src {
   background-color: rgb(34, 34, 34);

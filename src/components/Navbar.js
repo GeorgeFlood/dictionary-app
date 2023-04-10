@@ -87,7 +87,7 @@ const Navbar = () => {
         <div className="night-mode">
           <label>
             <input type="checkbox" onChange={handleDarkModeToggle} />
-            <span class="slider round"></span>
+            <span className="slider round"></span>
           </label>
           <svg
             xmlns="http://www.w3.org/2000/svg"

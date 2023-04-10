@@ -9,6 +9,7 @@
   &--src {
     margin-left: 2rem;
     color: #000;
+    transition: all 0.43 ease-in-out;
     [data-theme="dark"] & {
       background-color: rgb(34, 34, 34);
       color: #fff;
