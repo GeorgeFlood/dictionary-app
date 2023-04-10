@@ -39,4 +39,12 @@ body {
   font-family: sans-serif;
   letter-spacing: 0.1em;
   margin: 0 20%;
+  background-color: $light-background;
+  color: $light-text;
+  transition: all 0.43s ease-in-out;
+
+  [data-theme="dark"] & {
+    background-color: black;
+    color: white;
+  }
 }

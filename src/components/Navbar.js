@@ -24,6 +24,14 @@ const Navbar = () => {
     SetFont(selectedFont);
   };
 
+  const handleDarkModeToggle = (e) => {
+    if (e.target.checked) {
+      document.documentElement.setAttribute("data-theme", "dark");
+    } else {
+      document.documentElement.removeAttribute("data-theme");
+    }
+  };
+
   return (
     <div className="container">
       <div>
@@ -78,7 +86,7 @@ const Navbar = () => {
         )}
         <div className="night-mode">
           <label>
-            <input type="checkbox" />
+            <input type="checkbox" onChange={handleDarkModeToggle} />
             <span class="slider round"></span>
           </label>
           <svg

@@ -2,6 +2,9 @@
   margin-top: 6rem;
   font-size: 1.6rem;
   color: rgba(0, 0, 0, 0.35);
+  [data-theme="dark"] & {
+    color: rgba(#fff, 0.35);
+  }
 
   &--list {
     position: relative;

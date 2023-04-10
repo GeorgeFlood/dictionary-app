@@ -9,5 +9,9 @@
   &--src {
     margin-left: 2rem;
     color: #000;
+    [data-theme="dark"] & {
+      background-color: rgb(34, 34, 34);
+      color: #fff;
+    }
   }
 }
