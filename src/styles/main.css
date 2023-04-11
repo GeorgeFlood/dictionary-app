@@ -35,6 +35,16 @@ body {
   color: #000000;
   transition: all 0.43s ease-in-out;
 }
+@media (max-width: 56.25em) {
+  body {
+    margin: 0 10%;
+  }
+}
+@media (max-width: 37.5em) {
+  body {
+    margin: 0 4%;
+  }
+}
 [data-theme=dark] body {
   background-color: black;
   color: white;
@@ -315,12 +325,13 @@ li {
 .src--p {
   font-style: italic;
 }
+.src a {
+  margin: 0 2rem;
+}
 .src--src {
-  margin-left: 2rem;
   color: #000;
   transition: all 0.43 ease-in-out;
 }
 [data-theme=dark] .src--src {
-  background-color: rgb(34, 34, 34);
   color: #fff;
 }/*# sourceMappingURL=main.css.map */

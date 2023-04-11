@@ -43,6 +43,14 @@ body {
   color: $light-text;
   transition: all 0.43s ease-in-out;
 
+  @include respond(tab-port) {
+    margin: 0 10%;
+  }
+
+  @include respond(phone) {
+    margin: 0 4%;
+  }
+
   [data-theme="dark"] & {
     background-color: black;
     color: white;
