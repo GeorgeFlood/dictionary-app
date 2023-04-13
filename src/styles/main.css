@@ -101,6 +101,18 @@ body {
   z-index: 1;
   transition: opacity ease-in-out 1s;
 }
+@media (max-width: 56.25em) {
+  .dropdown-menu {
+    top: 6.5%;
+    left: 66%;
+  }
+}
+@media (max-width: 37.5em) {
+  .dropdown-menu {
+    top: 9%;
+    left: 48%;
+  }
+}
 
 .no-menu {
   opacity: 0;

@@ -49,6 +49,15 @@
   padding: 8px;
   z-index: 1;
   transition: opacity ease-in-out 1s;
+
+  @include respond(tab-port) {
+    top: 6.5%;
+    left: 66%;
+  }
+  @include respond(phone) {
+    top: 9%;
+    left: 48%;
+  }
 }
 
 .no-menu {

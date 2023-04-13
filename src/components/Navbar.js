@@ -22,6 +22,7 @@ const Navbar = () => {
   const handleFontClick = (e) => {
     const selectedFont = e.target.innerHTML;
     SetFont(selectedFont);
+    SetisOpen(false);
   };
 
   const handleDarkModeToggle = (e) => {
@@ -31,6 +32,27 @@ const Navbar = () => {
       document.documentElement.removeAttribute("data-theme");
     }
   };
+
+  const handleClickOutside = (e) => {
+    if (
+      !e.target.closest(".dropdown-menu") &&
+      !e.target.closest(".font-style__icon")
+    ) {
+      SetisOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    if (isOpen) {
+      document.addEventListener("click", handleClickOutside);
+    } else {
+      document.removeEventListener("click", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [isOpen]);
 
   return (
     <div className="container">
