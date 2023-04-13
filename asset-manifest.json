@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/dictionary-app/static/css/main.2cf375d6.css",
+    "main.js": "/dictionary-app/static/js/main.9474eeba.js",
+    "static/media/Inter-VariableFont_slnt,wght.ttf": "/dictionary-app/static/media/Inter-VariableFont_slnt,wght.aadb65ac45347ff46699.ttf",
+    "static/media/Inconsolata-VariableFont_wdth,wght.ttf": "/dictionary-app/static/media/Inconsolata-VariableFont_wdth,wght.1f56ee050cf1f63c7314.ttf",
+    "static/media/Lora-Italic-VariableFont_wght.ttf": "/dictionary-app/static/media/Lora-Italic-VariableFont_wght.731176b1f393de411b4f.ttf",
+    "index.html": "/dictionary-app/index.html",
+    "main.2cf375d6.css.map": "/dictionary-app/static/css/main.2cf375d6.css.map",
+    "main.9474eeba.js.map": "/dictionary-app/static/js/main.9474eeba.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2cf375d6.css",
+    "static/js/main.9474eeba.js"
+  ]
+}
