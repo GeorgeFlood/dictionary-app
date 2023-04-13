@@ -24,6 +24,7 @@ const SearchBar = ({ handleDefinitionData }) => {
             placeholder="Search..."
           />
           <svg
+            onClick={handleWordSubmit}
             className="search-icon"
             xmlns="http://www.w3.org/2000/svg"
             width="18"
