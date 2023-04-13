@@ -59,5 +59,9 @@ li {
 }
 
 .verb {
-  color: black;
+  color: #000;
+  transition: all 0.4s ease-in-out;
+  [data-theme="dark"] & {
+    color: #fff;
+  }
 }

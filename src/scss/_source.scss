@@ -1,6 +1,9 @@
 .src {
   display: flex;
   margin: 4rem 4rem;
+  @include respond(phone) {
+    margin: 4rem 0rem;
+  }
 
   &--p {
     font-style: italic;
@@ -8,6 +11,9 @@
 
   & a {
     margin: 0 2rem;
+    @include respond(phone) {
+      margin: 0rem 1rem;
+    }
   }
 
   &--src {

@@ -315,18 +315,32 @@ li {
 }
 
 .verb {
-  color: black;
+  color: #000;
+  transition: all 0.4s ease-in-out;
+}
+[data-theme=dark] .verb {
+  color: #fff;
 }
 
 .src {
   display: flex;
   margin: 4rem 4rem;
 }
+@media (max-width: 37.5em) {
+  .src {
+    margin: 4rem 0rem;
+  }
+}
 .src--p {
   font-style: italic;
 }
 .src a {
   margin: 0 2rem;
+}
+@media (max-width: 37.5em) {
+  .src a {
+    margin: 0rem 1rem;
+  }
 }
 .src--src {
   color: #000;
