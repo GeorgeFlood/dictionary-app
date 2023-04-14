@@ -33,6 +33,9 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  @include respond(big-desk) {
+    font-size: 75%;
+  }
 }
 
 body {
