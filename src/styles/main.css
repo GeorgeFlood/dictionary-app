@@ -229,6 +229,11 @@ body {
   transform: translateY(-50%);
   transition: all ease-in-out 0.3s 0.2s;
 }
+@media (min-width: 112.5em) {
+  .search-icon {
+    right: 5.2rem;
+  }
+}
 
 .header {
   margin-top: 7rem;

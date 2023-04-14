@@ -43,4 +43,7 @@
   width: 2.4rem;
   transform: translateY(-50%);
   transition: all ease-in-out 0.3s 0.2s;
+  @include respond(big-desk) {
+    right: 5.2rem;
+  }
 }
